@@ -30,6 +30,8 @@ public class HelloController {
         return new ReverseResponse(text, reversed, text.length());
     }
 
+    // update
+
     public record ReverseResponse(String original, String reversed, int length) { }
 
     public record Greeting(String message, String owner, LocalDateTime timestamp) { }
